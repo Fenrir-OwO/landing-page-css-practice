@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Example</title>
+    <style>
+        .container {
+            display: flex;
+            align-items: center; /* Center items vertically */
+        }
+
+        .image {
+            max-width: 100%; /* Ensure the image doesn't exceed its container */
+            margin-right: 20px; /* Add some space between the image and text */
+        }
+
+        .text {
+            flex-grow: 1; /* Allow the text to grow and take up remaining space */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="art.jpg" alt="Image description" class="image">
+        <p class="text">Your text goes here.</p>
+    </div>
+</body>
+</html>
